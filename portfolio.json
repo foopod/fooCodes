@@ -1,0 +1,55 @@
+var portfolio = [{
+      "title": "Homage",
+      "imageURL": "images/homage.jpg",
+      "link": "https://play.google.com/store/apps/details?id=com.foopod.homage",
+      "features": ["Simple gameplay mechanics","Challenging to the bitter end", "Fun for any age group"],
+      "shortDescription":"I very recently published my first game",
+      "longDescription":"A homage to games we played as children. Save people as they escape a crashing star cruiser. Use your highly agile spaceship to safely collect the escape pods.",
+      "priority":"1"
+      },
+                 {
+      "title": "Sarah",
+      "imageURL": "images/sarah.jpg",
+      "link": "http://globalgamejam.org/2016/games/obsession",
+      "features": ["", ""],
+      "shortDescription":"A game about Obsession for GGJ",
+      "longDescription":"",
+      "priority":"2"
+      },
+                 {
+      "title": "Mr Scoopy",
+      "imageURL": "images/scoopy.jpg",
+      "link": "https://foopod.itch.io/mr-scoopy",
+      "features": ["", ""],
+      "shortDescription":"A creepy game made for KiwiJam",
+      "longDescription":"",
+      "priority":"4"
+      },
+                 {
+      "title": "Bastard Pyramid",
+      "imageURL": "images/pyramid.jpg",
+      "link": "",
+      "features": ["", ""],
+      "shortDescription":"A board game made during PaperJam",
+      "longDescription":"",
+      "priority":"3"
+      },
+                 {
+      "title": "Picoplanet",
+      "imageURL": "images/picoplanet.jpg",
+      "link": "",
+      "features": ["", ""],
+      "shortDescription":"A low poly world simulator",
+      "longDescription":"",
+      "priority":"5"
+      },
+                 {
+      "title": "Vegeto",
+      "imageURL": "images/vegeto.jpg",
+      "link": "http://foopod.github.io/vegeto/",
+      "features": ["", ""],
+      "shortDescription":"A recipe site I made learning Angular",
+      "longDescription":"",
+      "priority":"7"
+      }
+]
