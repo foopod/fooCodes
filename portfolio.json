@@ -28,7 +28,7 @@ var portfolio = [{
                  {
       "title": "Bastard Pyramid",
       "imageURL": "images/pyramid.jpg",
-      "link": "#",
+      "link": "images/pyramid.jpg",
       "features": ["", ""],
       "shortDescription":"A board game made during PaperJam",
       "longDescription":"",
@@ -37,7 +37,7 @@ var portfolio = [{
                  {
       "title": "Picoplanet",
       "imageURL": "images/picoplanet.jpg",
-      "link": "#",
+      "link": "images/picoplanet.jpg",
       "features": ["", ""],
       "shortDescription":"A low poly world simulator",
       "longDescription":"",
