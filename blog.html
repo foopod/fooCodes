@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Foo Codes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <style type="text/css">
+            p {
+                text-align: left;
+            }
+        </style>
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+                    <li><a href="index.html">Foo</a></li>
+                    <li><a href="homage.html">Homage</a></li>
+                    <li><a href="blog.html" class="featureLink">Blog</a></li>
+				</ul>
+			</nav>
+        
+        <!-- Blog -->
+			<div id="blogContainer"></div>
+       
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					<header>
+						<h2>Want to get in touch?</h2>
+						<p style="text-align:center;">Contact me through any of the below</p>
+					</header>
+					<ul class="social">
+									<li><a href="https://twitter.com/foocodes" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/jonathon-shields-62233782" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://plus.google.com/u/0/111568177518897038306" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+<li><a href="github.com/foopod" class="icon fa-github"><span class="label">Github</span></a></li>
+<li><a href="https://www.instagram.com/jono_shields" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+                    <div>
+                        <h2>or</h2>
+                    <a href="mailto:jonathonshields@gmail.com" class="button big scrolly">or flick me an email</a>
+                        </div>
+				</article>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script type="text/javascript">
+				$.ajax({
+                    url: 'http://api.tumblr.com/v2/blog/foopod.tumblr.com/posts/text?api_key=4VpbewproebSpr77v3EeFoL2wLozFeSh8FxGQndHqtxIomD8pQ&limit=20',
+                    method:'get',
+                    dataType:'jsonp',
+                    success: function(data){
+                            var objectPosts = data.response.posts;
+//                            $('#firstBlogContainer').append('<article class="centreHorizontal 7u 12u(mobile)"><header><h2>' + objectPosts[0].title + '</h2><sup>' + objectPosts[0].date + '</sup><div>' + objectPosts[0].body + '</div></header></article>');
+//                            objectPosts.shift();
+                            $.each(objectPosts, function(key, value){
+                                    var style = key%2+2;
+                                    var body = value.body.replace(/<img.*?>/g, '<span class="image fit">$&</span>');
+                                    $('#blogContainer').append(
+                                        '<div class="wrapper style'+style+'"><article class="centreHorizontal 7u 12u(mobile)"><header><h2>' + value.title + '</h2><sup>' + value.date + '</sup><div>' + body + '</div></header></article></div>'
+                                    );
+                            });
+                    }
+				});
+			</script>
+	</body>
+</html>

@@ -1937,12 +1937,12 @@
 		/* Wrappers */
 
 			.wrapper {
-				padding: 5em 0 5em 0;
+				padding: 8em 0 5em 0;
 				text-align: center;
 			}
 
 				.wrapper.first {
-					padding-top: 7em;
+					padding-top: 9em;
                     padding-bottom: 9em;
 				}
 
@@ -2082,12 +2082,12 @@
 		/* Wrappers */
 
 			.wrapper {
-				padding: 3em 15px 3em 15px;
+				padding: 5em 15px 3em 15px;
 				text-align: center;
 			}
 
 				.wrapper.first {
-					padding-top: 5em;
+					padding-top: 8em;
 				}
 
 		/* Nav */
