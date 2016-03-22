@@ -29,9 +29,8 @@
                     <li><a href="blog.html" class="featureLink">Blog</a></li>
 				</ul>
 			</nav>
-        
         <!-- Blog -->
-			<div id="blogContainer"></div>
+			<div id="blogContainer"><div class="spinner"></div></div>
        
 
 		<!-- Contact -->
@@ -75,7 +74,8 @@
                             $.each(objectPosts, function(key, value){
                                     var style = key%2+2;
                                     var body = value.body.replace(/<img.*?>/g, '<span class="image fit">$&</span>');
-                                    $('#blogContainer').append(
+                                    $('#blogContainer').empty();
+                                $('#blogContainer').append(
                                         '<div class="wrapper style'+style+'"><article class="centreHorizontal 7u 12u(mobile)"><header><h2>' + value.title + '</h2><sup>' + value.date + '</sup><div>' + body + '</div></header></article></div>'
                                     );
                             });
