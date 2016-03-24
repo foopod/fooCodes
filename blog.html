@@ -64,19 +64,20 @@
 			<script src="assets/js/main.js"></script>
             <script type="text/javascript">
 				$.ajax({
-                    url: 'http://api.tumblr.com/v2/blog/foopod.tumblr.com/posts/text?api_key=4VpbewproebSpr77v3EeFoL2wLozFeSh8FxGQndHqtxIomD8pQ&limit=20',
+                    url: 'http://api.tumblr.com/v2/blog/foopod.tumblr.com/posts/text?api_key=4VpbewproebSpr77v3EeFoL2wLozFeSh8FxGQndHqtxIomD8pQ&limit=5',
                     method:'get',
                     dataType:'jsonp',
                     success: function(data){
                             var objectPosts = data.response.posts;
 //                            $('#firstBlogContainer').append('<article class="centreHorizontal 7u 12u(mobile)"><header><h2>' + objectPosts[0].title + '</h2><sup>' + objectPosts[0].date + '</sup><div>' + objectPosts[0].body + '</div></header></article>');
 //                            objectPosts.shift();
+                         $('#blogContainer').empty();
                             $.each(objectPosts, function(key, value){
                                     var style = key%2+2;
                                     var body = value.body.replace(/<img.*?>/g, '<span class="image fit">$&</span>');
-                                    $('#blogContainer').empty();
+//                                   
                                 $('#blogContainer').append(
-                                        '<div class="wrapper style'+style+'"><article class="centreHorizontal 7u 12u(mobile)"><header><h2>' + value.title + '</h2><sup>' + value.date + '</sup><div>' + body + '</div></header></article></div>'
+                                        '<div class="wrapper style'+style+'"><article class="centreHorizontal 5u 12u(mobile)"><header><h2>' + value.title + '</h2><sup>' + value.date + '</sup><div>' + body + '</div></header></article></div>'
                                     );
                             });
                     }
