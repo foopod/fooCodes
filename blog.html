@@ -74,7 +74,7 @@
                          $('#blogContainer').empty();
                             $.each(objectPosts, function(key, value){
                                     var style = key%2+2;
-                                    var body = value.body.replace(/<img.*?>/g, '<span class="image fit">$&</span>');
+                                    var body = value.body.replace(/<img.*?>/g, '<p><span class="image fit">$&</span></p>');
 //                                   
                                 $('#blogContainer').append(
                                         '<div class="wrapper style'+style+'"><article class="centreHorizontal 5u 12u(mobile)"><header><h2>' + value.title + '</h2><sup>' + value.date + '</sup><div>' + body + '</div></header></article></div>'
