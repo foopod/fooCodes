@@ -73,7 +73,7 @@
 //                            objectPosts.shift();
                          $('#blogContainer').empty();
                             $.each(objectPosts, function(key, value){
-                                    var style = key%2+2;
+                                    var style = key%2+1;
                                     var body = value.body.replace(/<img.*?>/g, '<p><span class="image fit">$&</span></p>');
 //                                   
                                 $('#blogContainer').append(
