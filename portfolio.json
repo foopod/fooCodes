@@ -3,7 +3,7 @@ var portfolio = [{
       "imageURL": "images/homage.jpg",
       "link": "https://play.google.com/store/apps/details?id=com.foopod.homage",
       "features": ["Simple gameplay mechanics","Challenging to the bitter end", "Fun for any age group"],
-      "shortDescription":"I very recently published my first game",
+      "shortDescription":"I just published my first game",
       "longDescription":"A homage to games we played as children. Save people as they escape a crashing star cruiser. Use your highly agile spaceship to safely collect the escape pods.",
       "priority":"1"
       },
@@ -21,7 +21,7 @@ var portfolio = [{
       "imageURL": "images/scoopy.jpg",
       "link": "https://foopod.itch.io/mr-scoopy",
       "features": ["", ""],
-      "shortDescription":"A creepy game made for KiwiJam",
+      "shortDescription":"A creepy game from KiwiJam",
       "longDescription":"",
       "priority":"4"
       },
@@ -30,7 +30,7 @@ var portfolio = [{
       "imageURL": "images/pyramid.jpg",
       "link": "images/pyramid.jpg",
       "features": ["", ""],
-      "shortDescription":"A board game made during PaperJam",
+      "shortDescription":"A board game made in PaperJam",
       "longDescription":"",
       "priority":"3"
       },
@@ -48,7 +48,7 @@ var portfolio = [{
       "imageURL": "images/vegeto.jpg",
       "link": "http://foopod.github.io/vegeto/",
       "features": ["", ""],
-      "shortDescription":"A recipe site I made learning Angular",
+      "shortDescription":"A recipe site, learning Angular",
       "longDescription":"",
       "priority":"7"
       }
