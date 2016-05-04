@@ -2129,6 +2129,8 @@
 .centreHorizontal{
         margin-left: auto;
         margin-right: auto;
+        float: none;
+        padding-bottom: 1em;
     }
 
 .tabbedIn{
