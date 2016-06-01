@@ -1961,6 +1961,10 @@
 
 	}
 
+.blogPostTitle{
+    margin-top: 2em;
+}
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
