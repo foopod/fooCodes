@@ -1965,6 +1965,10 @@
     margin-top: 2em;
 }
 
+.navSelected{
+    color: #43B3E0 !important;
+}
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {

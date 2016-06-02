@@ -1,7 +1,7 @@
 var portfolio = [{
       "title": "Homage",
       "imageURL": "images/homage.jpg",
-      "link": "https://play.google.com/store/apps/details?id=com.foopod.homage",
+      "link": "homage.html",
       "features": ["Simple gameplay mechanics","Challenging to the bitter end", "Fun for any age group"],
       "shortDescription":"I just published my first game",
       "longDescription":"A homage to games we played as children. Save people as they escape a crashing star cruiser. Use your highly agile spaceship to safely collect the escape pods.",
