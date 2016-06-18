@@ -1,11 +1,19 @@
 var portfolio = [{
+      "title": "Sunset Generator",
+      "imageURL": "https://thumbs.gfycat.com/SoggyAngelicGrayreefshark-size_restricted.gif",
+      "link": "http://sunset.foo.codes",
+      "features": ["Perlin Noise Hills","Randomly chosen gradients", "Rolling hills and sun setting animation"],
+      "shortDescription":"Sunsets are pretty",
+      "longDescription":"I like to look at sunsets, but they are somewhat limited in viewing time, this is  my attempt to fix that.",
+      "priority":"1"
+      },{
       "title": "Homage",
       "imageURL": "images/homage.jpg",
       "link": "homage.html",
       "features": ["Simple gameplay mechanics","Challenging to the bitter end", "Fun for any age group"],
       "shortDescription":"I just published my first game",
       "longDescription":"A homage to games we played as children. Save people as they escape a crashing star cruiser. Use your highly agile spaceship to safely collect the escape pods.",
-      "priority":"1"
+      "priority":"2"
       },
                  {
       "title": "Sarah",
@@ -14,7 +22,7 @@ var portfolio = [{
       "features": ["", ""],
       "shortDescription":"A game about Obsession for GGJ",
       "longDescription":"",
-      "priority":"2"
+      "priority":"3"
       },
                  {
       "title": "Mr Scoopy",
@@ -32,7 +40,7 @@ var portfolio = [{
       "features": ["", ""],
       "shortDescription":"A board game made in PaperJam",
       "longDescription":"",
-      "priority":"3"
+      "priority":"5"
       },
                  {
       "title": "Picoplanet",
@@ -41,7 +49,7 @@ var portfolio = [{
       "features": ["", ""],
       "shortDescription":"A low poly world simulator",
       "longDescription":"",
-      "priority":"5"
+      "priority":"6"
       },
                  {
       "title": "Vegeto",

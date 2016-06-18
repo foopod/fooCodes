@@ -55,9 +55,9 @@
 					</header>
 					<div class="container">
 						<div class="row">
-							<div class="4u 12u(mobile)" ng-repeat="project in portfolio.projectList | orderBy : 'priority'">
+							<div class="4u 12u(mobile)" ng-repeat="project in portfolio.projectList | orderBy : 'priority' | limitTo:6">
 								<article class="box style2">
-									<a href="{{project.link}}" class="image featured"><img ng-src="{{project.imageURL}}" alt="" /></a>
+									<a href="{{project.link}}" class="image featured"><img ng-src="{{project.imageURL}}" alt="" class="portfolio"/></a>
 									<h3><a href="{{project.link}}">{{project.title}}</a></h3>
 									<p>{{project.shortDescription}}</p>
 								</article>
